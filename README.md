@@ -15,3 +15,14 @@
 
 *哈哈*
 *酷捏*
+## 公钥
+- 本机已配置
+> 1. 打开git bash 
+> 2. `cat ~/.ssh/id_rsa.pub`
+> 3. 获取到ssh公钥去git配置
+- 本机未配置
+> 1. 打开git bash 
+> 2. `ssh-keygen -t rsa -C`
+> 3. 查看id_rsa.pub文件，获取到ssh公钥去git配置  
+
+> 通讯测试 `ssh -T git@github.com`
